@@ -1,19 +1,46 @@
-# Word Embedding Explorer Setup Guide
+# Word Embedding Explorer 🔍
 
-## Quick Start
+A comprehensive Streamlit web application for exploring and analyzing word embeddings using GloVe, Word2Vec, and FastText models.
 
-1. **Run the Application**:
-   ```bash
-   # Option 1: Use the batch file (Windows)
-   run_app.bat
-   
-   # Option 2: Manual command
-   streamlit run app.py
-   ```
+## 🌟 Features
 
-2. **Open in Browser**: Go to `http://localhost:8501`
+- **Interactive Web Interface** - User-friendly Streamlit dashboard
+- **GloVe Embeddings Support** - Load pretrained Stanford GloVe embeddings
+- **Word Similarity Analysis** - Calculate cosine similarity between words
+- **Word Analogies** - Solve "king - man + woman ≈ queen" style analogies  
+- **2D Visualizations** - t-SNE and PCA scatter plots of word clusters
+- **Model Comparison** - Compare GloVe vs Word2Vec vs FastText
+- **OOV Handling Demo** - See how FastText handles unknown words
 
-3. **Load Embeddings**: Click "Load Demo GloVe Data" in the sidebar to start exploring
+## 🚀 Quick Start
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/VinayMarabe/BagOfWords.git
+cd "Word Embedding Explorer"
+```
+
+### 2. Install Dependencies
+```bash
+pip install streamlit numpy matplotlib scikit-learn gensim
+```
+
+### 3. Download GloVe Embeddings
+```bash
+# Option 1: Download full embeddings (recommended)
+python download_glove.py
+
+# Option 2: Use sample embeddings (for quick testing)
+# Sample file is already included: glove_sample.txt
+```
+
+### 4. Run the Application
+```bash
+streamlit run app.py
+```
+
+### 5. Open in Browser
+Visit: http://localhost:8501
 
 ## Full GloVe Embeddings Download
 
