@@ -1,0 +1,9 @@
+@echo off
+echo Starting Word Embedding Explorer...
+echo.
+echo Installing required packages...
+pip install streamlit numpy matplotlib scikit-learn gensim
+echo.
+echo Launching Streamlit app...
+streamlit run app.py --server.port 8501
+pause
